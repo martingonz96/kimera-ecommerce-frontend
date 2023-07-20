@@ -1,0 +1,50 @@
+@import '../../../scss/index.scss';
+
+
+.account {
+  display: flex;
+
+  button {
+    background-color: transparent !important;
+    margin-left: 10px;
+
+    &:hover {
+        > i {
+            color: $primary;
+        }
+    }
+
+    > i {
+        font-size: 18px;
+        height: 20px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  .cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     > div {
+        background-color: $primary;
+        color: $text-primary;
+        margin-left: 5px;
+        font-size: 10px;
+     }
+  }
+  
+  .user {
+    background-color: #101010 !important;
+    border-radius: 10px;
+    border: 2px solid #101010;
+
+    &:hover {
+        border: 2px solid $primary;
+        i {
+            color: $text-primary;
+        }
+    }
+  }
+}
